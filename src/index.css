@@ -11,3 +11,9 @@
 		src: url("/fonts/Orbitron.ttf") format("woff2");
 	}
 }
+
+
+.scollAnim {
+	animation: fadeOut 2s forwards;
+	animation-timeline: scroll();
+}

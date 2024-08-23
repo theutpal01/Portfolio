@@ -14,9 +14,7 @@ function Hero({ scrollTo }) {
 		<div id="hero" className="hero bg-base-200 min-h-screen">
 			<div className="hero-content flex-col lg:flex-row-reverse">
 				<div className="w-full h-full">
-					<Spline
-						className="bg-primary-content"
-						scene="https://prod.spline.design/8-mPD7Bcujxig2P4/scene.splinecode"
+					<Spline className="w-1/2 h-1/2" scene="https://prod.spline.design/QgRhL-qL1dOPbI6X/scene.splinecode"
 					/>
 				</div>
 				<div>

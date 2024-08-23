@@ -5,18 +5,18 @@ function About({ scrollTo }) {
 	return (
 		<div
 			id="about"
-			className="flex container min-h-screen flex-col justify-around items-center"
+			className="flex scollAnim w-auto min-h-screen flex-col justify-around items-center"
 		>
-			<h2 className="text-3xl font-display text-center">About Me</h2>
-			<div className="flex flex-col lg:flex-row justify-center items-center">
-				<div className="w-1/2 justify-center flex">
+			<h2 className="text-3xl font-display text-center my-6">About Me</h2>
+			<div className="flex flex-col lg:flex-row justify-center items-center w-full">
+				<div className="w-1/2 justify-center flex my-5">
 					<img
 						className="drop-shadow-3xl hover:-translate-y-5 active:translate-y-5 duration-200"
 						src="/me.png"
 						alt="Profile"
 					/>
 				</div>
-				<div className="w-1/2">
+				<div className="w-full md:w3/4 lg:w-1/2 p-5">
 					<p className="py-6">
 						Hi, I'm a developer from India with a strong foundation in C++,
 						Python, and JavaScript, I enjoy creating projects that blend

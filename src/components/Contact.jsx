@@ -11,7 +11,7 @@ import {
 function Contact() {
 	return (
 		<div id="contact" className="min-h-screen flex bg-base-300">
-			<div className="w-2/5 flex flex-col justify-center items-center">
+			<div className="hidden w-2/5 md:flex flex-col justify-center items-center">
 				<h2 className="text-2xl my-4 font-display">Let's connect</h2>
 				<div className="flex flex-col gap-3 justify-start">
 					<div className="flex items-center gap-3 ">
@@ -46,7 +46,7 @@ function Contact() {
 					</div>
 				</div>
 			</div>
-			<div className="w-4/5 flex flex-col gap-5 p-3 justify-center items-center">
+			<div className="w-full md:w-4/5 flex flex-col gap-5 p-3 justify-center items-center">
 				<h2 className="text-2xl align-top w-2/3 font-display">Send me a message</h2>
 				<form className="flex flex-col gap-4 w-2/3">
 					<div className="flex gap-3 w-full">
