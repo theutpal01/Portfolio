@@ -10,7 +10,7 @@ import {
 
 function Contact() {
 	return (
-		<div id="contact" className="min-h-screen flex bg-base-300">
+		<div id="contact" className="min-h-screen flex bg-base-300 w-full">
 			<div className="hidden w-2/5 md:flex flex-col justify-center items-center">
 				<h2 className="text-2xl my-4 font-display">Let's connect</h2>
 				<div className="flex flex-col gap-3 justify-start">
@@ -46,9 +46,9 @@ function Contact() {
 					</div>
 				</div>
 			</div>
-			<div className="w-full md:w-4/5 flex flex-col gap-5 p-3 justify-center items-center">
-				<h2 className="text-2xl align-top w-2/3 font-display">Send me a message</h2>
-				<form className="flex flex-col gap-4 w-2/3">
+			<div className="w-full sm:w-9/12 md:w-4/5 flex flex-col self-center m-auto gap-5 p-5 md:px-16 lg:px-32 xl:px-44 justify-center items-center">
+				<h2 className="text-2xl align-top w-full font-display">Send me a message</h2>
+				<form className="flex flex-col gap-4 w-full">
 					<div className="flex gap-3 w-full">
 						<input
 							type="text"
