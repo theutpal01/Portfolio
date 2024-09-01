@@ -2,7 +2,6 @@ import React from "react";
 import { LuMenu, LuXSquare } from "react-icons/lu";
 
 export default function Navbar({ scrollTo }) {
-	const [isOpen, setIsOpen] = React.useState(false);
 	return (
 		<div className="drawer drawer-end">
 			<input id="drawerNav" type="checkbox" className="drawer-toggle" />

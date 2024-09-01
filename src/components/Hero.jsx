@@ -13,10 +13,11 @@ function Hero({ scrollTo }) {
 	return (
 		<div id="hero" className="hero bg-base-200 min-h-screen">
 			<div className="hero-content flex-col lg:flex-row-reverse">
-				<div className="w-full h-full">
+				{/* <div className="w-full h-full">
 					<Spline className="w-1/2 h-1/2" scene="https://prod.spline.design/QgRhL-qL1dOPbI6X/scene.splinecode"
 					/>
-				</div>
+				</div> */}
+				<Spline scene="https://prod.spline.design/x6cqrG0hlvvpH4KM/scene.splinecode" className="absolute -z-10 bg-base-200"/>
 				<div>
 					<h2 className="py-2 text-3xl font-bold font-display">Hi, Its me</h2>
 					<h1 className="py-2 text-6xl font-bold font-display">Utpal</h1>
