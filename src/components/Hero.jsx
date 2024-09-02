@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Spline from "@splinetool/react-spline";
 import {
 	LuLinkedin,
@@ -10,14 +10,32 @@ import {
 } from "react-icons/lu";
 
 function Hero({ scrollTo }) {
+	const [sceneUrl, setSceneUrl] = useState("");
+	useEffect(() => {
+		const updateSceneUrl = () => {
+			if (window.innerWidth < 1024) {
+				setSceneUrl(
+					"https://prod.spline.design/gQBYgaMjOougbkir/scene.splinecode"
+				);
+			} else {
+				setSceneUrl(
+					"https://prod.spline.design/qvt0s5J7Ww0XyKGX/scene.splinecode"
+				);
+			}
+		};
+
+		updateSceneUrl();
+		window.addEventListener("resize", updateSceneUrl);
+		return () => window.removeEventListener("resize", updateSceneUrl);
+	}, []);
+
 	return (
 		<div id="hero" className="hero bg-base-200 min-h-screen">
 			<div className="hero-content flex-col lg:flex-row-reverse h-full">
 				<Spline
-					className="absolute -z-10 w-full opacity-40 hidden lg:block"
-					scene="https://prod.spline.design/qvt0s5J7Ww0XyKGX/scene.splinecode"
+					className="absolute -z-10 w-full opacity-40"
+					scene={sceneUrl}
 				/>
-				<Spline className="absolute -z-10 w-full opacity-40 lg:hidden" scene="https://prod.spline.design/x6cqrG0hlvvpH4KM/scene.splinecode" />
 				<div className="flex justify-center items-start h-full flex-col">
 					<h2 className="py-2 text-3xl font-bold font-display">Hi, Its me</h2>
 					<h1 className="py-2 text-6xl font-bold font-display">Utpal</h1>
