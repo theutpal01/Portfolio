@@ -13,7 +13,7 @@ function Skill({ name, rating, maxRating }) {
 		);
 	}
 	return (
-		<div className="flex gap-3 items-center justify-between w-full">
+		<div className="flex gap-3 items-center justify-around w-full">
 			<p className="text-lg pr-5 w-1/5">{name}</p>
 			<div className="rating flex gap-2 w-3/5">
 				{elements}
